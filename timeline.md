@@ -1,6 +1,6 @@
 # Timeline
 ## week 1
-- Introduction [slides](/week-1/introduction.html), [code](/week-1/day_of_week.py)
+- Introduction [slides](/week-1/introduction.md), [code](/week-1/day_of_week.py)
     - Objectives of the course
     - Installing Python
     - Using IDLE, the integrated development environment
