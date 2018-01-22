@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Abhishek Dasgupta" />
+  <meta name="date" content="2018-01-15" />
+  <title>Introduction to Python for Political Scientists</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+  </style>
+  <link rel="stylesheet" type="text/css" media="screen, projection, print"
+    href="http://www.w3.org/Talks/Tools/Slidy2/styles/slidy.css" />
+  <link rel="stylesheet" type="text/css" media="screen, projection, print"
+   href="style.css" />
+  <script src="http://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
+    charset="utf-8" type="text/javascript"></script>
+</head>
+<body>
+<div class="slide titlepage">
+  <h1 class="title">Introduction to Python for Political Scientists</h1>
+  <p class="author">
+Abhishek Dasgupta
+  </p>
+  <p class="date">2018-01-15</p>
+</div>
+<div id="welcome" class="titleslide slide section level1"><h1>Welcome</h1></div><div id="about-the-course" class="slide section level2">
+<h2>About the Course</h2>
+<ul>
+<li>Convenors: Lucas Kello and Radoslaw Zubek</li>
+<li>Instructor: Abhishek Dasgupta</li>
+<li>Classes every Monday of HT, 12-2.</li>
+</ul>
+</div><div id="course-structure" class="slide section level2">
+<h2>Course structure</h2>
+<ul>
+<li>Basics of Python programming</li>
+<li>Course website <a href="http://python-course.trenozoic.net" class="uri">http://python-course.trenozoic.net</a></li>
+<li>Assignments</li>
+<li>Project: coding in Python as part of day-to-day research</li>
+</ul>
+</div><div id="communication" class="slide section level2">
+<h2>Communication</h2>
+<ul>
+<li>Email: abhishek.dasgupta@cs.ox.ac.uk</li>
+<li>Slack: <a href="http://python-course-dpir.slack.com" class="uri">http://python-course-dpir.slack.com</a></li>
+<li>Office hours: TBA</li>
+</ul>
+</div><div id="textbook" class="slide section level2">
+<h2>Textbook</h2>
+<p><img src="automate_cover_medium.png" alt="textbook cover" /><br />
+</p>
+<ul>
+<li>Automate the Boring Stuff with Python, by Al Swiegart</li>
+<li><a href="https://automatetheboringstuff.com/" class="uri">https://automatetheboringstuff.com/</a> free to see online</li>
+<li>Shall be loosely followed</li>
+<li>Chapter notes at the end of each class</li>
+</ul>
+</div>
+<div id="lets-start" class="titleslide slide section level1"><h1>Let's start!</h1></div><div id="download-and-install-python" class="slide section level2">
+<h2>Download and install python</h2>
+<ul>
+<li>Visit http://python.org</li>
+<li>On Windows: download Python 3.6 (.msi) installer, click and run.</li>
+<li>On Mac: download Python 3.6 (.dmg) installer, click and run.</li>
+</ul>
+</div><div id="idle-interactive-development-environment" class="slide section level2">
+<h2>IDLE (Interactive Development Environment)</h2>
+<ul>
+<li>Easiest way to start Python coding</li>
+</ul>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> <span class="st">&quot;hello&quot;</span>
+<span class="op">&gt;&gt;&gt;</span> y <span class="op">=</span> <span class="st">&quot;world&quot;</span>
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(x <span class="op">+</span> <span class="st">&#39; &#39;</span> <span class="op">+</span> y)</code></pre></div>
+</div><div id="run-the-sample-code" class="slide section level2">
+<h2>Run the sample code</h2>
+<p>This program shows the weekday for a date. Link:</p>
+<p><a href="http://python-course.trenozoic.net/ht2018/day_of_week.py" class="uri">http://python-course.trenozoic.net/ht2018/day_of_week.py</a></p>
+<p>Check that it opens in IDLE. Then use F5 to run.</p>
+<p>Anything with a <code>#</code> in front is a comment. Use them liberally!</p>
+</div>
+<div id="expressions-and-types" class="titleslide slide section level1"><h1>Expressions and Types</h1></div><div id="programming-modes" class="slide section level2">
+<h2>Programming modes</h2>
+<ul>
+<li>Two modes: interactive and batch</li>
+<li>We shall start with interactive</li>
+<li>Batch mode for programs (use F5 to run)</li>
+</ul>
+</div><div id="interactive-mode" class="slide section level2">
+<h2>Interactive mode</h2>
+<pre><code>Python 3.6.4 (default, Jan  5 2018, 02:13:53) 
+[GCC 7.2.0] on linux
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&gt;&gt;&gt;</code></pre>
+<p>Make sure it is Python 3!</p>
+<p>Python 2 and 3 are quite different in many ways.</p>
+<p><code>&gt;&gt;&gt;</code> is the prompt for your code, which can be expressions or statements.</p>
+</div><div id="expressions-and-statements" class="slide section level2">
+<h2>Expressions and Statements</h2>
+<p>Expressions can be <em>evaluated</em> (<strong>left to right</strong>)</p>
+<p>Examples:</p>
+<ul>
+<li>2 + 2</li>
+<li>1.0 / 3.0</li>
+<li>4 / 2 / 2</li>
+<li>'hello' + 'world'</li>
+</ul>
+<p>Statements are <em>instructions</em> which are executed, expressions are <em>values</em></p>
+<ul>
+<li>a = 2</li>
+<li>def f(x): return x * x</li>
+</ul>
+</div><div id="variables" class="slide section level2">
+<h2>Variables</h2>
+<p>Variables are boxes for expressions</p>
+<ul>
+<li><code>number = 2</code></li>
+<li><code>python_is_great = True</code></li>
+<li><code>standardGreeting = 'hello' + ' world'</code></li>
+<li><code>another = 5</code></li>
+<li><code>s = number + another</code></li>
+</ul>
+<p>Naming:</p>
+<ul>
+<li>Must be one word, beginning with letter</li>
+<li>Only alphanumerics and underscore (_)</li>
+</ul>
+</div><div id="functions" class="slide section level2">
+<h2>Functions</h2>
+<p>Functions are like boxes for statements with a <strong>input</strong> (optional) and <strong>output</strong> (optional)</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="kw">def</span> fahrenheit_to_celsius(F):
+    <span class="cf">return</span> (F <span class="op">-</span> <span class="dv">32</span>) <span class="op">*</span> <span class="dv">5</span><span class="op">/</span><span class="dv">9</span></code></pre></div>
+<p>Now we can use it in an expression:</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> fahrenheit_to_celsius(<span class="dv">32</span>)
+<span class="fl">0.0</span></code></pre></div>
+</div><div id="print" class="slide section level2">
+<h2>print()</h2>
+<p>print(x) shows the value of an expression.</p>
+<p>Really useful in code:</p>
+<ul>
+<li>finding problems</li>
+<li>displaying information to users</li>
+</ul>
+<p>Not that useful in interactive mode as IDLE evaluates and shows values anyway.</p>
+</div><div id="types" class="slide section level2">
+<h2>Types</h2>
+<ul>
+<li>Constants or literals: numbers, strings, booleans</li>
+<li>Every <em>expression</em> in Python has a <em>type</em></li>
+<li><em>Generally</em> only same types can be combined via operations</li>
+</ul>
+<pre><code>&gt;&gt;&gt; type(3)
+&gt;&gt;&gt; type(3.0)
+&gt;&gt;&gt; type(True)
+&gt;&gt;&gt; type(False)
+&gt;&gt;&gt; type(1/2)
+&gt;&gt;&gt; type(1/0)</code></pre>
+</div><div id="type-of-a-statement" class="slide section level2">
+<h2>Type of a statement?</h2>
+<pre><code>&gt;&gt;&gt; type(a = 2)
+&gt;&gt;&gt; type(def f(x): return x)</code></pre>
+</div><div id="strings" class="slide section level2">
+<h2>Strings</h2>
+<ul>
+<li>In quotes: 'hi'</li>
+<li>Double quotes also work: &quot;hi&quot;, useful for representing single quotes</li>
+<li>Concatenation: 'hi' + ' there'</li>
+<li>newlines: special characters representing end of line: ''.</li>
+</ul>
+</div><div id="numbers" class="slide section level2">
+<h2>Numbers</h2>
+<ul>
+<li>Operators: <code>+, -, *, /, **</code> (in increasing order of precedence)</li>
+<li>Expressions are evaluated left to right.</li>
+<li>2 * 3 + 4 = 10 (not 14)</li>
+<li>Brackets for precedence (only parentheses)</li>
+<li>So 2 * (3 + 4) = 14</li>
+</ul>
+</div><div id="numbers-as-seen-by-python" class="slide section level2">
+<h2>Numbers as seen by Python</h2>
+<ul>
+<li>Two main types: <code>int</code> and <code>float</code>.</li>
+<li><code>int</code> has no limit (except for RAM), <code>float</code> has limits:</li>
+</ul>
+<pre><code>&gt;&gt;&gt; import sys
+&gt;&gt;&gt; sys.float_info
+...</code></pre>
+</div><div id="comparison" class="slide section level2">
+<h2>Comparison</h2>
+<ul>
+<li>Gives booleans: <code>True</code> or <code>False</code></li>
+<li>Equality <code>==, !=</code></li>
+<li>Order <code>&lt;, &gt;, &lt;=, &gt;=</code></li>
+<li>Any two expressions in Python can be compared for equality</li>
+<li>Generally only expressions of the same type can be compared for <code>&lt;</code> and <code>&gt;</code>.</li>
+<li>numbers != strings</li>
+</ul>
+<pre><code>&gt;&gt;&gt; 2 != &#39;2&#39;
+True</code></pre>
+<ul>
+<li>Floating point equality is not precise</li>
+</ul>
+</div><div id="logical-operations" class="slide section level2">
+<h2>Logical operations</h2>
+<ul>
+<li><code>and</code>, <code>or</code>, <code>not</code></li>
+<li>Works as expected:</li>
+</ul>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> <span class="kw">not</span> <span class="va">True</span>
+<span class="va">False</span>
+<span class="op">&gt;&gt;&gt;</span> <span class="kw">not</span> <span class="va">False</span>
+<span class="va">True</span>
+<span class="op">&gt;&gt;&gt;</span> <span class="va">True</span> <span class="kw">and</span> <span class="va">False</span>
+<span class="va">False</span>
+<span class="op">&gt;&gt;&gt;</span> <span class="va">True</span> <span class="kw">and</span> <span class="va">True</span>
+<span class="va">True</span>
+<span class="op">&gt;&gt;&gt;</span> <span class="va">False</span> <span class="kw">or</span> <span class="va">True</span>
+<span class="va">True</span></code></pre></div>
+</div>
+<div id="flow-control" class="titleslide slide section level1"><h1>Flow Control</h1></div><div id="if-statement" class="slide section level2">
+<h2>if statement</h2>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="cf">if</span> condition:
+   do this
+<span class="cf">elif</span> condition: <span class="co"># optional</span>
+   do something <span class="cf">else</span>
+<span class="cf">else</span>:
+   do that</code></pre></div>
+</div><div id="while-statement" class="slide section level2">
+<h2>while statement</h2>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="cf">while</span> condition:
+   do this</code></pre></div>
+<ul>
+<li><code>break</code> breaks out of the loop</li>
+<li><code>continue</code> starts next iteration of loop</li>
+</ul>
+</div>
+<div id="practical" class="titleslide slide section level1"><h1>practical</h1></div><div id="coding" class="slide section level2">
+<h2>coding</h2>
+<p>Let's fix the day of week program!</p>
+<p>It should output:</p>
+<p>(day) (is a | will be | was a) (day of week)</p>
+</div><div id="reading-notes" class="slide section level2">
+<h2>reading notes</h2>
+<p>Read chapters 1 and 2 of ATBS, exercises.</p>
+</div>
+</body>
+</html>
