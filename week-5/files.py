@@ -20,10 +20,11 @@ with fn.open() as fp:  # Here fp is a file object
 # For example, count the number of words in the file
 words = 0
 with fn.open() as fp:  # Here fp is a file object
-	words += len(fp.readlines().split())
+	for i in fp.readlines():
+		words += len(i.split())
 
 d = Path('.')  # . is always the current directory
-print(d.glob('*.txt')) # Returns all .txt files in the current directory
+print(list(d.glob('*.txt'))) # Returns all .txt files in the current directory
 
 # Point to something subfolder within the current directory
 subfolder = d / 'something'
