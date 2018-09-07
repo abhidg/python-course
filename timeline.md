@@ -9,19 +9,16 @@
         - Numeric operations
         - Strings
         - String operations
-    - Flow Control
-        - if/elif/else
-        - while statement
-
 ## week 2
+- Flow Control
+    - if/elif/else
+    - while statement
 - For loops and the range() function
-- Lists
-    - Appending to a list and deleting
-    - Indexing and slicing to extract elements
-- Tuples
-- Practical: Sieve of Eratosthenes
+- Lists 1: Appending and deleting
+- Practical: Basic list operations
 
 ## week 3
+- Lists 2: Indexing and slicing to extract elements
 - Dictionaries
     - Addition and deletion of keys
 - Iterators
@@ -33,7 +30,6 @@
     - Defining functions and modular programming
     - Variables and scope
     - Exceptions
-    - Unit testing with pytest
 - Practical
     - Writing fibonacci function
     - Calculate weekday from a given date, using functions
@@ -48,7 +44,6 @@
         - Creating and removing directories
         - Finding files
     - Logging for record-keeping
-    - Command line arguments
 - Practical
     - Convert a folder of text files to lowercase, and add a footer
       block with the number of words, characters and lines in the
