@@ -41,9 +41,8 @@ date: 2019-01-15
 
 ## Run the sample code
 
-This program shows the weekday for a date. Link:
-
-<http://python-course.trenozoic.net/ht2018/day_of_week.py>
+This program shows the weekday for a date.
+[Download](https://raw.githubusercontent.com/abhidg/python-course/master/week-1/day_of_week.py)
 
 Check that it opens in IDLE. Then use F5 to run.
 
