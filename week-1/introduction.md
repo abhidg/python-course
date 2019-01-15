@@ -26,8 +26,8 @@ date: 2019-01-15
 ## Download and install python
 
 - Visit http://python.org
-- On Windows: download Python 3.6 (.msi) installer, click and run.
-- On Mac: download Python 3.6 (.dmg) installer, click and run.
+- On Windows: download Python 3.7 (.msi) installer, click and run.
+- On Mac: download Python 3.7 (.dmg) installer, click and run.
 
 ## IDLE (Interactive Development Environment)
 
