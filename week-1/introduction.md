@@ -6,24 +6,11 @@ date: 2018-01-15
 
 # Welcome
 
-## About the Course
-
-- Convenors: Lucas Kello and Radoslaw Zubek
-- Instructor: Abhishek Dasgupta
-- Classes every Monday of HT, 12-2.
-
-## Course structure
-
-- Basics of Python programming
-- Course website <http://python-course.trenozoic.net>
-- Assignments
-- Project: coding in Python as part of day-to-day research
-
 ## Communication
 
-- Email: abhishek.dasgupta@cs.ox.ac.uk
-- Slack: <http://python-course-dpir.slack.com>
-- Office hours: TBA
+- website: https://github.com/abhidg/python-course
+- e-mail: abhishek.dasgupta@politics.ox.ac.uk
+- mailing list: dpir-python-course@maillist.ox.ac.uk
 
 ## Textbook
 
@@ -33,7 +20,6 @@ date: 2018-01-15
 - Automate the Boring Stuff with Python, by Al Swiegart
 - <https://automatetheboringstuff.com/> free to see online
 - Shall be loosely followed
-- Chapter notes at the end of each class
 
 # Let's start!
 
