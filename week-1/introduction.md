@@ -59,8 +59,8 @@ Anything with a `#` in front is a comment. Use them liberally!
 ## Interactive mode
 
 ~~~
-Python 3.6.4 (default, Jan  5 2018, 02:13:53) 
-[GCC 7.2.0] on linux
+Python 3.7.2 (default, Jan  3 2019, 02:55:40)
+[GCC 8.2.0] on linux
 Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ~~~
