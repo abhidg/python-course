@@ -1,7 +1,7 @@
 ---
 title: Introduction to Python for Political Scientists
 author: Abhishek Dasgupta
-date: 2018-01-15
+date: 2019-01-15
 ---
 
 # Welcome
